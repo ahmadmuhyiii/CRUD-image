@@ -6,11 +6,26 @@ export default async function Albums() {
     const images = await getImages();
 
     return (
-        <div className="max-w-screen-lg mx-auto py-14">
+        <div className="max-w-screen-lg mx-auto py-14 px-4">
             <div className="flex items-end justify-between">
-                <h1 className="text-4xl font-bold"> Latest Images</h1>
-                <Link href="/create" className=" py-3 px-6 bg-blue-600 hover:bg-blue-700 text-white">
-                 New Image</Link>
+                <h1 className="text-4xl font-bold">Albums Moment Kita💗</h1>
+                <Link href="/create" className="flex overflow-hidden ring-[5px] ring-white w-[5.1rem] hover:w-[6.5rem] items-center gap-2 cursor-pointer bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white px-5 py-2 rounded-full transition-all ease-in-out hover:scale hover:scale-105 font-[revert] active:scale-100 shadow-lg">
+                Buat
+                <svg
+                className="size-6 mt-0.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672Zm-7.518-.267A8.25 8.25 0 1 1 20.25 10.5M8.288 14.212A5.25 5.25 0 1 1 17.25 10.5"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                ></path>
+            </svg>
+                </Link>
             </div>
             <div className="grid md:grid-cols-3 gap-5 mt-10">
             {images.map((item) => (

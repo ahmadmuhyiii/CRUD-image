@@ -28,9 +28,12 @@ export const EditButton = ({ id }: { id: string }) => {
   return (
     <Link
       href={`edit/${id}`}
-      className="py-3 text-sm bg-gray-50 rounded-bl-md w-full hover:bg-gray-100 text-center"
+      className="inline-block w-full py-3 font-bold text-center text-white 
+                uppercase align-middle transition-all rounded-lg cursor-pointer bg-gradient-to-tl from-purple-700
+                to-pink-500 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 
+                hover:scale-110 hover:rotate-2 hover:bg-pink-700 hover:text-pink-200 hover:shadow-lg active:opacity-85"
     >
-      Edit
+     Edit 
     </Link>
   );
 };
@@ -40,7 +43,10 @@ export const DeleteButton = ({ id }: { id: string }) => {
     return (
       <form
         action={deleteImageWithId}
-        className="py-3 text-sm bg-gray-50 rounded-br-md w-full hover:bg-gray-100 text-center"
+        className="inline-block w-full py-3 font-bold text-center text-white 
+                uppercase align-middle transition-all rounded-lg cursor-pointer bg-gradient-to-tl from-purple-700
+                to-pink-500 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 
+                hover:scale-110 hover:rotate-2 hover:bg-pink-700 hover:text-pink-200 hover:shadow-lg active:opacity-85"
       >
         <DeleteBtn />
       </form>
