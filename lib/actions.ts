@@ -59,8 +59,8 @@ const EditSchema = z.object({
     .refine((file) => file.size === 0 || file.type.startsWith("image/"), {
       message: "Only images are allowed",
     })
-    .refine((file) => file.size < 4000000, {
-      message: "Image must less than 4MB",
+    .refine((file) => file.size < 40000000, {
+      message: "Image must less than 40MB",
     })
     .optional(),
 });
